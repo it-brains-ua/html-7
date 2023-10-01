@@ -8,34 +8,34 @@
 
                 {{#with data}}
                 <div>
-                   <p>{{data: name={'javascript'} }}</p>
+                   <p>name:{{name}}</p>
                 </div>
                 {{/with}} 
                     <br>
 
                 {{#each data}}
                    <div>
-                     <p>{{description:'JavaScript is a popular high-level, dynamic, and interpreted programming language.'}}</p>
-                     <h2> {{history:}}</h2>
-                     <h3> {{year: 1995}}</h3>
-                     <h4> {{founder: 'Brendan Eich'}}</h4>
+                     <p>description:{{description}}</p>
+                     <h2> history:{{history}}</h2>
+                     <h3> year: {{year}}</h3>
+                     <h4> founder: {{founder}}</h4>
                    </div>
                 {{/each}}
                     <br>
 
                  {{#each types}}
                   <h5>
-                    {{types: ['Number','String', 'Boolean', 'Null','Undefined','Symbol','Object'}}
+                    types:{{types}}
                   </h5>
                  {{/each}}
                     <br>
 
                  {{#each santax}}
-                      <h6> {{variables: 'var', 'let', 'const'}}</h6>
-                      <p>  {{functions: 'function'}}</p>
-                      <p>  {{conditionals: 'if', 'else', 'switch'}}</p>
-                     <span>{{loops: 'for', 'while', 'do-while'}}</span>
-                        <b>{{classes: 'class'}} </b>
+                      <h6> variables:{{variables}} </h6>
+                      <p>  functions: {{functions}}</p>
+                      <p>  conditionals: {{conditionals}}</p>
+                     <span>loops: {{loops}}</span>
+                        <b>classes: {{classes}} </b>
                  {{/each}}
 
             </div>
